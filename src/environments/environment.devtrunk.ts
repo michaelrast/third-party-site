@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  eCommerce_location: 'http://localhost:65071/'
+  eCommerce_location: 'http://ajax:198/'
 };
 
 /*

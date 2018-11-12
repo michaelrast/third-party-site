@@ -1,0 +1,24 @@
+<div>
+    <mat-toolbar color="primary">
+      <span><mat-icon>flight_takeoff</mat-icon></span>
+  
+      <span>Example Third Party Application</span>
+  
+      <button mat-icon-button [mat-menu-trigger-for]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-menu x-position="before" #menu="matMenu">
+      <button mat-menu-item routerLink="/main/just-zipcode">Just Zipcode</button>
+      <button mat-menu-item routerLink="/main/contact-info">Contact Info</button>
+      <button mat-menu-item routerLink="/main/full-info">Full Info</button>
+    </mat-menu>
+  
+    <router-outlet></router-outlet>
+  
+    <!-- <span class="done">
+      <button mat-fab>
+        <mat-icon>check circle</mat-icon>
+      </button>
+    </span> -->
+  </div>

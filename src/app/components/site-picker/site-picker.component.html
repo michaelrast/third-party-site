@@ -1,0 +1,10 @@
+<mat-card>
+    <mat-card-title>Pick eComm Site to Redirect To - {{eCommSite}}</mat-card-title>
+
+    <mat-button-toggle-group  #group="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" [value]="eCommSite"  (change)="onValChange(group.value)">
+      <mat-button-toggle value="http://localhost:65071/">Dev</mat-button-toggle>
+      <mat-button-toggle value="http://ajax:198/">Dev Trunk</mat-button-toggle>
+      <mat-button-toggle value="https://scegqatrunkenergycenter.easycleanenergy.com/">QA Trunk</mat-button-toggle>
+    </mat-button-toggle-group>
+        
+  </mat-card>
